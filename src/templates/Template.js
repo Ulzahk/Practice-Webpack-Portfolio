@@ -1,4 +1,7 @@
-import getData from '../utils/getData.js';
+import getData from "@utils/getData.js";
+import TwitterIcon from "@images/twitter.png";
+import GitHubIcon from "@images/github.png";
+import InstagramIcon from "@images/instagram.png";
 
 const Template = async () => {
   const data = await getData();
@@ -24,13 +27,13 @@ const Template = async () => {
         </div>
         <div class="card_social">
           <a href="https://twitter.com/gndx">
-            <img src="../src/assets/images/twitter.png" />
+            <img src="${TwitterIcon}" />
           </a>
           <a href="https://github.com/gndx">
-            <img src="../src/assets/images/github.png" />
+            <img src="${GitHubIcon}" />
           </a>
           <a href="https://instagram.com/gndx">
-            <img src="../src/assets/images/instagram.png" />
+            <img src="${InstagramIcon}" />
           </a>
         </div>
       </div>
